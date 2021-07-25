@@ -14,13 +14,33 @@
     <?php
       $x = true;
       $y = false;
-      echo  var_dump($x);
+    
       echo "<br>";
-      echo  var_dump($y) ;
+      echo  var_dump($y); 
+      
+      
+      ?>
+
+
+
+
+    <!-- Comparison Operator -->
+
+    <?php
+    define ("pi",3.14);
+echo "<br>";
+    echo "Is  1===1 : ";
+    echo var_dump(1===1);
+    $a= "hi i am ";
+    $b="manisha";
+    echo $a.=$b;
+    echo pi;
 
     ?>
 </body>
 </html>
+
+
 
     
 
