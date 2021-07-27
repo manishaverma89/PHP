@@ -15,9 +15,9 @@ foreach($family as $value){
 
 
 function avg_count($any_array){
-   $sum=1;
+   $sum=0;
     foreach ($any_array as $value) {
-          $sum *= $value;   
+          $sum += $value;   
     }
     return $sum;
 }
