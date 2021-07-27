@@ -12,23 +12,25 @@ foreach($family as $value){
     // echo "<br>";
     echo "$value <br>";
 }
+//  Average count
 
-
-function avg_count($any_array){
+function average($any_array){
    $sum=0;
+   $i=1;
     foreach ($any_array as $value) {
-          $sum += $value;   
+          $sum += $value;  
+          $i++; 
     }
-    return $sum;
+    return $sum/$i;
 }
 
 
 $manisha_count = ["1","2","3"];
-$sum_manisha_count = avg_count($manisha_count);
+$sum_manisha_count = average($manisha_count);
 echo "sum of Manisha_count is:  ". $sum_manisha_count;
 
 $bhavya_count = array("2","3","3");
-$sum_bhavya_count = avg_count($bhavya_count);
+$sum_bhavya_count = average($bhavya_count);
 echo "<br>sum of Bhavya_count is:  ". $sum_bhavya_count;
 
 ?>
